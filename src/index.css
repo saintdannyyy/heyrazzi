@@ -17,9 +17,10 @@
 }
 
 .gradient-border {
-  border-width: 4px;
+  border-width: 5px;
   border-image-slice: 1;
   border-image-source: linear-gradient(to right, #FF7900, #B3A19A, #45B4E9);
+  border-radius: 1.5rem; /* equivalent to rounded-3xl */
 }
 
 a {
