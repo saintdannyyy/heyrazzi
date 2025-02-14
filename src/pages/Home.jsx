@@ -1,6 +1,6 @@
 import icon from "@/assets/icon.png";
 import side from "@/assets/side.png";
-import iPhone from "@/assets/iPhone_Space_Black_Front.png";
+import iPhone from "@/assets/iPhone.png";
 import SignUp from "@/assets/signup.svg";
 import Invitereviews from "@/assets/invitereviews.svg";
 import Create from "@/assets/create.svg";
