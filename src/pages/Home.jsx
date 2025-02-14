@@ -1,13 +1,17 @@
-import icon from "/src/assets/icon.png";
-import side from "/src/assets/side.png";
-import iPhone from "/src/assets/iPhone.png";
-import SignUp from "/src/assets/signup.svg";
-import Invitereviews from "/src/assets/invitereviews.svg";
-import Create from "/src/assets/create.svg";
-import Track from "/src/assets/track.png";
+// import icon from "/src/assets/icon.png";
+// import side from "/src/assets/side.png";
+// import iPhone from "/src/assets/iPhone.png";
+// import SignUp from "/src/assets/signup.svg";
+// import Invitereviews from "/src/assets/invitereviews.svg";
+// import Create from "/src/assets/create.svg";
+// import Track from "/src/assets/track.png";
+import Macbook from "@/assets/macbook.png";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { ArrowCircleUpRight } from "@untitled-ui/icons-react";
+import FAQSection from "@/components/FAQ";
+import Testimonials from "@/components/Testimonial";
+import Footer from "@/components/Footer";
 
 const Home = () => {
   return (
@@ -15,11 +19,15 @@ const Home = () => {
       {/* first section */}
       <section className="hero flex top-16 pt-8 items-center">
         <div>
-          <p className="flex items-center text-lg text-gray-500">
-            <img src={icon} alt="HeyRazzi Logo" className="h-8 w-8 mr-2" />
+          <p className="flex items-center text-base text-gray-500">
+            <img
+              src="../assets/icon.png"
+              alt="HeyRazzi Logo"
+              className="h-8 w-8 mr-2"
+            />
             The best tool for creators
           </p>
-          <h1 className="text-6xl font-medium mt-4">
+          <h1 className="text-5xl font-medium mt-4">
             Display Your Craft,
             <br />
             Attract More Clients, <br />
@@ -50,7 +58,11 @@ const Home = () => {
           </div>
         </div>
         <div className="flex ml-10">
-          <img src={side} alt="Side Image" className="max-w-full h-auto" />
+          <img
+            src="../assets/side.png"
+            alt="Side Image"
+            className="max-w-full h-auto"
+          />
         </div>
       </section>
 
@@ -59,7 +71,7 @@ const Home = () => {
         <div className="flex items-center text-white">
           <div className="flex flex-col m-10 space-y-4">
             <div className="bg-[#45B3E8] p-10 rounded-3xl shadow-lg">
-              <h2 className="text-2xl font-semibold">
+              <h2 className="text-xl font-semibold">
                 Advanced Analytics Dashboard
               </h2>
               <p className="mt-2">
@@ -70,7 +82,7 @@ const Home = () => {
               </p>
             </div>
             <div className="p-10 rounded-3xl shadow-lg gradient-border">
-              <h3 className="text-2xl text-gray-700 font-semibold">
+              <h3 className="text-xl text-gray-700 font-semibold">
                 Client Feedback Integration
               </h3>
               <p className="mt-2 text-gray-600">
@@ -81,9 +93,13 @@ const Home = () => {
             </div>
           </div>
           <div className="bg-[#FF7900] p-10 rounded-3xl shadow-lg">
-            <img src={iPhone} alt="iPhone" className="max-w-full h-auto" />
+            <img
+              src="../assets/iPhone.png"
+              alt="iPhone"
+              className="max-w-full h-auto"
+            />
             <div>
-              <h3 className="text-2xl text-gray-100 font-semibold">
+              <h3 className="text-xl text-gray-100 font-semibold">
                 Professional Portfolios
               </h3>
               <p className="mt-2 text-gray-300">
@@ -108,7 +124,7 @@ const Home = () => {
 
       {/* How It Works  */}
       <section className="how mt-10">
-        <h2 className="text-7xl">
+        <h2 className="text-6xl">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FF7900] to-[#8cb2d4]">
             How It Works?
           </span>
@@ -117,11 +133,11 @@ const Home = () => {
           {/* 1/4 frame */}
           <div className="items-center border-2 rounded-3xl border-gray-300 m-4 bg-white">
             <div className="flex items-center">
-              <p className="text-7xl text-gray-300">01</p>
-              <img src={SignUp} alt="Sign Up" />
+              <p className="text-6xl text-gray-300">01</p>
+              <img src="../assets/signup.svg" alt="Sign Up" />
             </div>
             <div className="m-5">
-              <h3 className="text-2xl font-semibold">Sign Up</h3>
+              <h3 className="text-xl font-semibold">Sign Up</h3>
               <p className="text-gray-400">
                 Quickly sign up and set up <br /> your HeyRazzi account.
               </p>
@@ -131,9 +147,9 @@ const Home = () => {
           <div className="items-center border-2 rounded-3xl border-gray-300 m-4 bg-white">
             <div className="flex items-center">
               <div>
-                <p className="text-7xl text-gray-300">02</p>
+                <p className="text-6xl text-gray-300">02</p>
                 <div className="m-5">
-                  <h3 className="text-3xl font-semibold text-gray-700">
+                  <h3 className="text-xl font-semibold text-gray-700">
                     Create Your Portfolio
                   </h3>
                   <p className="text-gray-400 mt-2">
@@ -142,17 +158,22 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <img src={Create} alt="Create Portfolio" height={40} className="mt-28" />
+              <img
+                src="../assets/create.svg"
+                alt="Create Portfolio"
+                height={40}
+                className="mt-28"
+              />
             </div>
           </div>
           {/* 3/4 frame */}
           <div className="items-center border-2 rounded-3xl border-gray-300 m-4 bg-white">
             <div className="flex items-center">
-              <p className="text-7xl text-gray-300">03</p>
-              <img src={Invitereviews} alt="Invite Reviews" />
+              <p className="text-6xl text-gray-300">03</p>
+              <img src="../assets/Invitereviews/svg" alt="Invite Reviews" />
             </div>
             <div className="m-5">
-              <h3 className="text-3xl font-semibold text-gray-800">
+              <h3 className="text-xl font-semibold text-gray-800">
                 Invite Reviews
               </h3>
               <p className="text-gray-400 mt-2">
@@ -165,25 +186,83 @@ const Home = () => {
           <div className="items-center border-2 rounded-3xl border-gray-300 m-4 bg-white">
             <div className="flex items-center">
               <div>
-                <p className="text-7xl text-gray-300">04</p>
+                <p className="text-6xl text-gray-300">04</p>
                 <div className="m-5">
-                  <h3 className="text-3xl font-semibold text-gray-800">
+                  <h3 className="text-xl font-semibold text-gray-800">
                     Track and Grow
                   </h3>
                   <p className="text-gray-400 mt-2">
-                    Use our analytics tools to see what’s working and refine your
-                    strategies for even better results.
+                    Use our analytics tools to see what’s working and refine
+                    your strategies for even better results.
                   </p>
                 </div>
               </div>
-              <img src={Track} alt="Track and Grow" height={40} className="mt-28" />
-            </div> 
+              <img
+                src="../assets/track.png"
+                alt="Track and Grow"
+                height={40}
+                className="mt-28"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       {/* FAQS */}
-      <div></div>
+      <section className="faq mt-5">
+        <div className="flex items-center">
+          <FAQSection />
+        </div>
+      </section>
+
+      {/* hear  */}
+      <section className="hear mt-5">
+        <Testimonials />
+      </section>
+
+      {/* showcase */}
+      <section className="mt-5">
+      <div className="flex flex-col md:flex-row justify-between items-center bg-[#45B3E8] rounded-3xl p-8 md:p-10">
+        {/* Left Side: Text and Input */}
+        <div className="flex-1 p-6 md:p-10">
+          <h2 className="text-5xl md:text-7xl text-white font-semibold leading-tight">
+            Ready to showcase <br /> your work to the <br />
+            world?
+          </h2>
+          <div className="flex items-center mt-5">
+            <Input
+              placeholder="Enter your username"
+              className="w-60 p-6 bg-[#9dc2e4] mr-3 rounded-lg border-none focus:ring-2 focus:ring-orange-500"
+            />
+            <button
+              className="flex w-12 h-12 bg-orange-500 items-center justify-center p-2 rounded-lg hover:bg-orange-600 transition-colors"
+              aria-label="Submit"
+            >
+              <ArrowCircleUpRight
+                size={24}
+                fill="none"
+                color="white"
+                strokeWidth="1"
+              />
+            </button>
+          </div>
+        </div>
+
+        {/* Right Side: Image */}
+        <div className="flex-1 flex justify-center md:justify-end pt-6 md:pt-10">
+          <img
+            src={Macbook} // Replace with your image path
+            alt="Macbook"
+            className="h-60 w-auto md:h-80"
+          />
+        </div>
+      </div>
+    </section>
+
+      {/* footer */}
+      <section className="footer mt-16">
+        <Footer/>
+      </section>
     </div>
   );
 };
