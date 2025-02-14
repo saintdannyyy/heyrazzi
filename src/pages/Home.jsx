@@ -6,7 +6,7 @@ import iPhone from "@/assets/iPhone.png";
 import signup from "@/assets/signup.svg";
 import create from "@/assets/create.svg";
 import invitereviews from "@/assets/invitereviews.svg";
-import track from "@/assets/track.svg";
+import track from "@/assets/track.png";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { ArrowCircleUpRight } from "@untitled-ui/icons-react";
