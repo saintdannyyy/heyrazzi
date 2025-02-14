@@ -1,10 +1,10 @@
-import icon from "@/assets/icon.png";
-import side from "@/assets/side.png";
-import iPhone from "@/assets/iPhone.png";
-import SignUp from "@/assets/signup.svg";
-import Invitereviews from "@/assets/invitereviews.svg";
-import Create from "@/assets/create.svg";
-import Track from "@/assets/track.png";
+import icon from "/src/assets/icon.png";
+import side from "/src/assets/side.png";
+import iPhone from "/src/assets/iPhone.png";
+import SignUp from "/src/assets/signup.svg";
+import Invitereviews from "/src/assets/invitereviews.svg";
+import Create from "/src/assets/create.svg";
+import Track from "/src/assets/track.png";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { ArrowCircleUpRight } from "@untitled-ui/icons-react";
