@@ -1,11 +1,12 @@
-// import icon from "/src/assets/icon.png";
-// import side from "/src/assets/side.png";
-// import iPhone from "/src/assets/iPhone.png";
-// import SignUp from "/src/assets/signup.svg";
-// import Invitereviews from "/src/assets/invitereviews.svg";
-// import Create from "/src/assets/create.svg";
-// import Track from "/src/assets/track.png";
+import React from "react";
 import Macbook from "@/assets/macbook.png";
+import icon from "@/assets/icon.png";
+import side from "@/assets/side.png";
+import iPhone from "@/assets/iPhone.png";
+import signup from "@/assets/signup.svg";
+import create from "@/assets/create.svg";
+import invitereviews from "@/assets/invitereviews.svg";
+import track from "@/assets/track.svg";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { ArrowCircleUpRight } from "@untitled-ui/icons-react";
@@ -21,7 +22,7 @@ const Home = () => {
         <div>
           <p className="flex items-center text-base text-gray-500">
             <img
-              src="../assets/icon.png"
+              src={icon}
               alt="HeyRazzi Logo"
               className="h-8 w-8 mr-2"
             />
@@ -59,7 +60,7 @@ const Home = () => {
         </div>
         <div className="flex ml-10">
           <img
-            src="../assets/side.png"
+            src={side}
             alt="Side Image"
             className="max-w-full h-auto"
           />
@@ -94,7 +95,7 @@ const Home = () => {
           </div>
           <div className="bg-[#FF7900] p-10 rounded-3xl shadow-lg">
             <img
-              src="../assets/iPhone.png"
+              src={iPhone}
               alt="iPhone"
               className="max-w-full h-auto"
             />
@@ -134,7 +135,7 @@ const Home = () => {
           <div className="items-center border-2 rounded-3xl border-gray-300 m-4 bg-white">
             <div className="flex items-center">
               <p className="text-6xl text-gray-300">01</p>
-              <img src="../assets/signup.svg" alt="Sign Up" />
+              <img src={signup} alt="Sign Up" />
             </div>
             <div className="m-5">
               <h3 className="text-xl font-semibold">Sign Up</h3>
@@ -159,7 +160,7 @@ const Home = () => {
                 </div>
               </div>
               <img
-                src="../assets/create.svg"
+                src={create}
                 alt="Create Portfolio"
                 height={40}
                 className="mt-28"
@@ -170,7 +171,7 @@ const Home = () => {
           <div className="items-center border-2 rounded-3xl border-gray-300 m-4 bg-white">
             <div className="flex items-center">
               <p className="text-6xl text-gray-300">03</p>
-              <img src="../assets/Invitereviews/svg" alt="Invite Reviews" />
+              <img src={invitereviews} alt="Invite Reviews" />
             </div>
             <div className="m-5">
               <h3 className="text-xl font-semibold text-gray-800">
@@ -198,7 +199,7 @@ const Home = () => {
                 </div>
               </div>
               <img
-                src="../assets/track.png"
+                src={track}
                 alt="Track and Grow"
                 height={40}
                 className="mt-28"
