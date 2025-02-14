@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import arrow from "../assets/arrowtopright.svg";
 import logo from "../assets/logo.png";
+import { ArrowCircleUpRight } from "@untitled-ui/icons-react";
 
 const Header = () => {
   return (
@@ -43,7 +43,7 @@ const Header = () => {
           </Button>
           <Button className="bg-orange-500 text-white hover:bg-orange-600 hover:text-orange-600 flex items-center space-x-2 transition-colors duration-200">
             <span>Create Account</span>
-            <img src={arrow} alt="Arrow Icon" />
+            <ArrowCircleUpRight/>
           </Button>
         </div>
       </div>

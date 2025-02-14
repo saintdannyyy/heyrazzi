@@ -1,13 +1,13 @@
-import icon from "../assets/icon.png";
-import side from "../assets/side.png";
-import iPhone from "../assets/iPhone_Space_Black_Front.png";
-import SignUp from "../assets/signup.svg";
-import Invitereviews from "../assets/invitereviews.svg";
-import Create from "../assets/create.svg";
-import Track from "../assets/track.png";
-import { Input } from "../components/ui/input";
+import icon from "@/assets/icon.png";
+import side from "@/assets/side.png";
+import iPhone from "@/assets/iPhone_Space_Black_Front.png";
+import SignUp from "@/assets/signup.svg";
+import Invitereviews from "@/assets/invitereviews.svg";
+import Create from "@/assets/create.svg";
+import Track from "@/assets/track.png";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 import { ArrowCircleUpRight } from "@untitled-ui/icons-react";
-import { Button } from "../components/ui/button";
 
 const Home = () => {
   return (
