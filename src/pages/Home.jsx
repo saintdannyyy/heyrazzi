@@ -261,7 +261,7 @@ const Home = () => {
     </section>
 
       {/* footer */}
-      <section className="footer mt-16">
+      <section className="footer mt-16 mb-10">
         <Footer/>
       </section>
     </div>
