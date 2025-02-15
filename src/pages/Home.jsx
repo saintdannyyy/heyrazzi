@@ -1,13 +1,13 @@
-import React from "react"
-import Macbook from "@/assets/macbook.png"
-import icon from "@/assets/icon.png"
-import side from "@/assets/side.png"
-import iPhone from "@/assets/iPhone.png"
-import signup from "@/assets/signup.svg"
-import create from "@/assets/create.svg"
-import invitereviews from "@/assets/invitereviews.svg"
-import track from "@/assets/track.png"
-import whitelogo from "@/assets/whitelogo.png"
+import React from "react";
+import Macbook from "@/assets/macbook.png";
+import icon from "@/assets/icon.png";
+import side from "@/assets/side.png";
+import iPhone from "@/assets/iPhone.png";
+import signup from "@/assets/signup.svg";
+import create from "@/assets/create.svg";
+import invitereviews from "@/assets/invitereviews.svg";
+import track from "@/assets/trackngrow.png";
+import whitelogo from "@/assets/whitelogo.png";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { ArrowCircleUpRight } from "@untitled-ui/icons-react";
@@ -18,19 +18,17 @@ import Header from "@/components/Header";
 
 const Home = () => {
   return (
-    <div className="bg-[#FFFAF6] px-40">
-            <div className="fixed top-0 left-0 right-0 bg-white z-10"> {/* Fixed header */}
+    <>
+    <div className="sticky top-0 left-0 right-0 bg-white z-10">
         <Header />
       </div>
+    <div className="bg-[#FFFAF6] mx-40">
+      
       {/* first section */}
-      <section className="hero flex top-16 pt-8 items-center">
+      <section className="hero flex top-10 pt-8 items-center">
         <div>
           <p className="flex items-center text-base text-gray-500">
-            <img
-              src={icon}
-              alt="HeyRazzi Logo"
-              className="h-8 w-8 mr-2"
-            />
+            <img src={icon} alt="HeyRazzi Logo" className="h-8 w-8 mr-2" />
             The best tool for creators
           </p>
           <h1 className="text-5xl font-medium mt-4">
@@ -64,22 +62,29 @@ const Home = () => {
           </div>
         </div>
         <div className="flex ml-10">
-          <img
-            src={side}
-            alt="Side Image"
-            className="max-w-full h-auto"
-          />
+          <img src={side} alt="Side Image" className="max-w-full h-auto" />
         </div>
       </section>
 
       {/* after hero */}
-      <section className="after-hero mt-10 bg-cover bg-center" style={{ backgroundImage: `url('@/assets/afterhero.png')` }}>
-        <div className="flex items-center">
-          <p>HeyRazzi is the ultimate online platform designed for photographers, videographers, and creative professionals who aim to elevate their online presence.</p>
-          <p>Our user-friendly platform offers powerful tools to create visually stunning portfolios that capture your unique artistic vision.</p>
+      <section
+        className="after-hero mt-10 bg-cover bg-center"
+        style={{ backgroundImage: `url("@/assets/afterhero.png")` }}
+      >
+        <div className="block items-center p-36 text-center">
+          <p>
+            HeyRazzi is the ultimate online platform designed for photographers,
+            videographers, and creative professionals who aim to elevate their
+            online presence.
+          </p>
+          <br />
+          <p>
+            Our user-friendly platform offers powerful tools to create visually
+            stunning portfolios that capture your unique artistic vision.
+          </p>
         </div>
-        <div className="flex items-center bg-gradient-to-r from-[#FFFAF6] to-[#FF7900] p-5 rounded-3xl mt-5">
-          <img src={whitelogo} alt="White Logo" />
+        <div className="flex items-center bg-gradient-to-r from-[#FFFAF6] to-[#af8763] p-5 rounded-3xl mt-5">
+          <img src={whitelogo} alt="White Logo" className="h-10 w-10" />
         </div>
       </section>
 
@@ -110,11 +115,7 @@ const Home = () => {
             </div>
           </div>
           <div className="bg-[#FF7900] p-10 rounded-3xl shadow-lg">
-            <img
-              src={iPhone}
-              alt="iPhone"
-              className="max-w-full h-auto"
-            />
+            <img src={iPhone} alt="iPhone" className="max-w-full h-auto" />
             <div>
               <h3 className="text-xl text-gray-100 font-semibold">
                 Professional Portfolios
@@ -214,12 +215,7 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <img
-                src={track}
-                alt="Track and Grow"
-                height={40}
-                className="mt-28"
-              />
+              <img src={track} alt="Track and Grow" className="mt-28 h-10" />
             </div>
           </div>
         </div>
@@ -232,55 +228,56 @@ const Home = () => {
         </div>
       </section>
 
-      {/* hear  */}
+      {/* testimonials  */}
       <section className="hear mt-5">
         <Testimonials />
       </section>
 
       {/* showcase */}
       <section className="mt-5">
-      <div className="flex flex-col md:flex-row justify-between items-center bg-[#45B3E8] rounded-3xl p-8 md:p-10">
-        {/* Left Side: Text and Input */}
-        <div className="flex-1 p-6 md:p-10">
-          <h2 className="text-5xl md:text-7xl text-white font-semibold leading-tight">
-            Ready to showcase <br /> your work to the <br />
-            world?
-          </h2>
-          <div className="flex items-center mt-5">
-            <Input
-              placeholder="Enter your username"
-              className="w-60 p-6 bg-[#9dc2e4] mr-3 rounded-lg border-none focus:ring-2 focus:ring-orange-500"
-            />
-            <button
-              className="flex w-12 h-12 bg-orange-500 items-center justify-center p-2 rounded-lg hover:bg-orange-600 transition-colors"
-              aria-label="Submit"
-            >
-              <ArrowCircleUpRight
-                size={24}
-                fill="none"
-                color="white"
-                strokeWidth="1"
+        <div className="flex flex-col md:flex-row justify-between items-center bg-[#45B3E8] rounded-3xl p-8 md:p-10">
+          {/* Left Side: Text and Input */}
+          <div className="flex-1 p-6 md:p-10">
+            <h2 className="text-5xl md:text-7xl text-white font-semibold leading-tight">
+              Ready to showcase <br /> your work to the <br />
+              world?
+            </h2>
+            <div className="flex items-center mt-5">
+              <Input
+                placeholder="Enter your username"
+                className="w-60 p-6 bg-[#9dc2e4] mr-3 rounded-lg border-none focus:ring-2 focus:ring-orange-500"
               />
-            </button>
+              <button
+                className="flex w-12 h-12 bg-orange-500 items-center justify-center p-2 rounded-lg hover:bg-orange-600 transition-colors"
+                aria-label="Submit"
+              >
+                <ArrowCircleUpRight
+                  size={24}
+                  fill="none"
+                  color="white"
+                  strokeWidth="1"
+                />
+              </button>
+            </div>
+          </div>
+
+          {/* Right Side: Image */}
+          <div className="flex-1 flex justify-center md:justify-end pt-6 md:pt-10">
+            <img
+              src={Macbook} // Replace with your image path
+              alt="Macbook"
+              className="h-60 w-auto md:h-80"
+            />
           </div>
         </div>
-
-        {/* Right Side: Image */}
-        <div className="flex-1 flex justify-center md:justify-end pt-6 md:pt-10">
-          <img
-            src={Macbook} // Replace with your image path
-            alt="Macbook"
-            className="h-60 w-auto md:h-80"
-          />
-        </div>
-      </div>
-    </section>
+      </section>
 
       {/* footer */}
       <section className="footer mt-16 mb-10">
-        <Footer/>
+        <Footer />
       </section>
     </div>
+    </>
   );
 };
 
