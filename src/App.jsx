@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import "./index.css";
+import SignUp from "./pages/SignUp";
 
 const App = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -16,13 +17,11 @@ const App = () => {
 
   return (
     <div>
-      <div className="fixed top-0 left-0 right-0 bg-white z-10"> {/* Fixed header */}
-        <Header />
-      </div>
       <div className="container"> {/* Main content */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/signup" element={SignUp} />
         </Routes>
       </div>
     </div>

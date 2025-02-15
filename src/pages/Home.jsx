@@ -1,23 +1,27 @@
-import React from "react";
-import Macbook from "@/assets/macbook.png";
-import icon from "@/assets/icon.png";
-import side from "@/assets/side.png";
-import iPhone from "@/assets/iPhone.png";
-import signup from "@/assets/signup.svg";
-import create from "@/assets/create.svg";
-import invitereviews from "@/assets/invitereviews.svg";
-import track from "@/assets/track.png";
-import whitelogo from "@/assets/whitelogo.png";
+import React from "react"
+import Macbook from "@/assets/macbook.png"
+import icon from "@/assets/icon.png"
+import side from "@/assets/side.png"
+import iPhone from "@/assets/iPhone.png"
+import signup from "@/assets/signup.svg"
+import create from "@/assets/create.svg"
+import invitereviews from "@/assets/invitereviews.svg"
+import track from "@/assets/track.png"
+import whitelogo from "@/assets/whitelogo.png"
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { ArrowCircleUpRight } from "@untitled-ui/icons-react";
 import FAQSection from "@/components/FAQ";
 import Testimonials from "@/components/Testimonial";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 const Home = () => {
   return (
     <div className="bg-[#FFFAF6] px-40">
+            <div className="fixed top-0 left-0 right-0 bg-white z-10"> {/* Fixed header */}
+        <Header />
+      </div>
       {/* first section */}
       <section className="hero flex top-16 pt-8 items-center">
         <div>
