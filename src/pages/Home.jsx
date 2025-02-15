@@ -67,7 +67,18 @@ const Home = () => {
         </div>
       </section>
 
-      {/* second section */}
+      {/* after hero */}
+        <section className="after-hero mt-10 bg-cover bg-center" style={{ backgroundImage: `url(${require('@/assets/afterhero.png')})` }}>
+          <div className="flex items-center">
+            <p>HeyRazzi is the ultimate online platform designed for photographers, videographers, and creative professionals who aim to elevate their online presence.</p>
+            <p>Our user-friendly platform offers powerful tools to create visually stunning portfolios that capture your unique artistic vision.</p>
+          </div>
+          <div className="flex items-center bg-gradient-to-r from-[#FFFAF6] to-[#FF7900] p-5 rounded-3xl mt-5">
+          <img src={whitelogo} alt="White Logo" />
+          </div>
+        </section>
+
+        {/* second section */}
       <section className="mt-20">
         <div className="flex items-center text-white">
           <div className="flex flex-col m-10 space-y-4">
